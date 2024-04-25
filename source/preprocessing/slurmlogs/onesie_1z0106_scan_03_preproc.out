@@ -1,0 +1,46 @@
+Starting relabelling...
+terminate called after throwing an instance of 'itk::ImageFileReaderException'
+  what():  /cm/shared/apps/itk/5.0/include/ITK-5.0/itkImageFileReader.hxx:136:
+ Could not create IO object for reading file /home/axel/dev/neonatal_brain_segmentation/data/delineations/case/raw/onesie_1z0106_scan_03_delineations.nii.gz
+The file doesn't exist. 
+Filename = /home/axel/dev/neonatal_brain_segmentation/data/delineations/case/raw/onesie_1z0106_scan_03_delineations.nii.gz
+
+/cm/local/apps/slurm/var/spool/job161230/slurm_script: line 14: 160415 Aborted                 ./relabeling/build/relabeling ${delineation_dir}/${subject_id}_delineations.nii.gz ${delineation_relabeled_dir}/${subject_id}_delineations.nii.gz
+
+real	0m0.049s
+user	0m0.036s
+sys	0m0.014s
+Ending relabelling...
+N4 Bias field correction starting...
+/cm/local/apps/slurm/var/spool/job161230/slurm_script: line 18: 160445 Segmentation fault      /cm/shared/apps/mirtk/Packages/DrawEM/ThirdParty/ITK/N4 -s '2' -c [5x5x5,0.001] -i ${img_dir}/${subject_id}.nii.gz -x ${delineation_relabeled_dir}/${subject_id}_delineations.nii.gz -o ${img_preproc_dir}/${subject_id}_preproc.nii.gz
+
+real	0m0.024s
+user	0m0.014s
+sys	0m0.007s
+N4 Bias field correction ending...
+Image Resampling starting...
+terminate called after throwing an instance of 'itk::ImageFileReaderException'
+  what():  /cm/shared/apps/itk/5.0/include/ITK-5.0/itkImageFileReader.hxx:136:
+ Could not create IO object for reading file /home/axel/dev/neonatal_brain_segmentation/data/images/case/preprocessing/onesie_1z0106_scan_03_preproc.nii.gz
+The file doesn't exist. 
+Filename = /home/axel/dev/neonatal_brain_segmentation/data/images/case/preprocessing/onesie_1z0106_scan_03_preproc.nii.gz
+
+/cm/local/apps/slurm/var/spool/job161230/slurm_script: line 22: 160446 Aborted                 ./resampling/build/resampling ${img_preproc_dir}/${subject_id}_preproc.nii.gz ${img_preproc_dir}/${subject_id}_preproc.nii.gz
+
+real	0m0.047s
+user	0m0.030s
+sys	0m0.019s
+Image Resampling ending...
+Delineation Resampling starting...
+terminate called after throwing an instance of 'itk::ImageFileReaderException'
+  what():  /cm/shared/apps/itk/5.0/include/ITK-5.0/itkImageFileReader.hxx:136:
+ Could not create IO object for reading file /home/axel/dev/neonatal_brain_segmentation/data/delineations/case/relabeled/onesie_1z0106_scan_03_delineations.nii.gz
+The file doesn't exist. 
+Filename = /home/axel/dev/neonatal_brain_segmentation/data/delineations/case/relabeled/onesie_1z0106_scan_03_delineations.nii.gz
+
+/cm/local/apps/slurm/var/spool/job161230/slurm_script: line 26: 160475 Aborted                 ./resampling_delineation/build/resampling_delineation ${delineation_relabeled_dir}/${subject_id}_delineations.nii.gz ${delineation_preproc_allVOIs_dir}/${subject_id}_delineations.nii.gz
+
+real	0m0.046s
+user	0m0.029s
+sys	0m0.020s
+Delineation Resampling ending...

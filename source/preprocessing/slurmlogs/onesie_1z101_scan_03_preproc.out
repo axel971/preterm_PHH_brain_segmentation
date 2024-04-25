@@ -1,0 +1,76 @@
+Starting relabelling...
+
+real	0m2.051s
+user	0m1.947s
+sys	0m0.100s
+Ending relabelling...
+N4 Bias field correction starting...
+
+Running N4 for 3-dimensional images.
+
+Current level = 1
+  Iteration 1 (of 5).   Current convergence value = 0.00025128 (threshold = 0.001)
+Current level = 2
+  Iteration 1 (of 5).   Current convergence value = 0.000636863 (threshold = 0.001)
+Current level = 3
+  Iteration 1 (of 5).   Current convergence value = 0.0025341 (threshold = 0.001)
+  Iteration 2 (of 5).   Current convergence value = 0.00239248 (threshold = 0.001)
+  Iteration 3 (of 5).   Current convergence value = 0.00225407 (threshold = 0.001)
+  Iteration 4 (of 5).   Current convergence value = 0.00212367 (threshold = 0.001)
+  Iteration 5 (of 5).   Current convergence value = 0.00200255 (threshold = 0.001)
+   N4MRIBiasFieldCorrectionImageFilter (0xef75e0)
+     RTTI typeinfo:   itk::N4MRIBiasFieldCorrectionImageFilter<itk::Image<float, 3u>, itk::Image<unsigned char, 3u>, itk::Image<float, 3u> >
+     Reference Count: 1
+     Modified Time: 602
+     Debug: Off
+     Observers: 
+       IterationEvent(Command)
+     Number Of Required Inputs: 1
+     Number Of Required Outputs: 1
+     Number Of Threads: 28
+     ReleaseDataFlag: Off
+     ReleaseDataBeforeUpdateFlag: Off
+     Input 0: (0xf15c70)
+     Input 1: (0xf08d50)
+     Output 0: (0xefb9c0)
+     AbortGenerateData: Off
+     Progress: 0
+     Multithreader: 
+       RTTI typeinfo:   itk::MultiThreader
+       Reference Count: 1
+       Modified Time: 214
+       Debug: Off
+       Observers: 
+         none
+       Thread Count: 28
+       Global Maximum Number Of Threads: 128
+       Global Default Number Of Threads: 28
+     Mask label: 
+     Number of histogram bins: 200
+     Weiner filter noise: 0.01
+     Bias field FWHM: 0.15
+     Maximum number of iterations: [5, 5, 5]
+     Convergence threshold: 0.001
+     Spline order: 3
+     Number of fitting levels: [3, 3, 3]
+     Number of control points: [4, 4, 4]
+     Sigmoid normalized alpha: 0
+     Sigmoid normalized beta: 0.5
+Elapsed time: 20.5163
+
+real	0m36.066s
+user	0m44.344s
+sys	0m0.979s
+N4 Bias field correction ending...
+Image Resampling starting...
+
+real	0m2.344s
+user	0m12.476s
+sys	0m0.123s
+Image Resampling ending...
+Delineation Resampling starting...
+
+real	0m0.725s
+user	0m4.935s
+sys	0m0.065s
+Delineation Resampling ending...

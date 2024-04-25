@@ -1,0 +1,883 @@
+Loading tensorflow/2.5
+  Loading requirement: cuda11.2/toolkit/11.2.2 cudnn8.1-cuda11.2/8.1.1.33
+    hdf5_18/1.8.20
+run_bayesian_U-Net
+[33mWARNING:[0m NVIDIA binaries may not be bound with --writable
+2021-09-19 09:40:26.359514: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+..data size:(41, 256, 128, 256)
+..loading data finished Sun Sep 19 09:40:53 2021
+2021-09-19 09:40:53.237087: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2021-09-19 09:40:53.289179: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1734] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: A100-PCIE-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 39.59GiB deviceMemoryBandwidth: 1.41TiB/s
+2021-09-19 09:40:53.289224: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2021-09-19 09:40:53.296028: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2021-09-19 09:40:53.296103: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2021-09-19 09:40:53.298759: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2021-09-19 09:40:53.299395: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2021-09-19 09:40:53.300318: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2021-09-19 09:40:53.301479: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2021-09-19 09:40:53.302016: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2021-09-19 09:40:53.305867: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1872] Adding visible gpu devices: 0
+2021-09-19 09:40:53.310871: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1734] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: A100-PCIE-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 39.59GiB deviceMemoryBandwidth: 1.41TiB/s
+2021-09-19 09:40:53.314716: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1872] Adding visible gpu devices: 0
+2021-09-19 09:40:53.314755: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2021-09-19 09:40:53.792747: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-09-19 09:40:53.792805: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-09-19 09:40:53.792841: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2021-09-19 09:40:53.798468: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 38184 MB memory) -> physical GPU (device: 0, name: A100-PCIE-40GB, pci bus id: 0000:3b:00.0, compute capability: 8.0)
+---------fold--1---------
+training set:  [10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33
+ 34 35 36 37 38 39]
+training set size:  30
+testing set:  [0 1 2 3 4 5 6 7 8 9]
+testing set size:  10
+..generator_len: 400
+..training_n_subject: 30
+..training_n_patch_per_sub: 2421185
+2021-09-19 09:40:56.599611: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-09-19 09:40:56.600295: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2100000000 Hz
+2021-09-19 09:40:59.029468: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2021-09-19 09:40:59.979926: I tensorflow/stream_executor/cuda/cuda_dnn.cc:380] Loaded cuDNN version 8202
+2021-09-19 09:41:00.948357: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2021-09-19 09:41:01.678861: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+Epoch 1/100
+400/400 - 129s - loss: 0.6953 - dice_multi: 0.3717
+Epoch 2/100
+400/400 - 99s - loss: 0.5183 - dice_multi: 0.4523
+Epoch 3/100
+400/400 - 99s - loss: 0.4323 - dice_multi: 0.5092
+Epoch 4/100
+400/400 - 99s - loss: 0.3701 - dice_multi: 0.5663
+Epoch 5/100
+400/400 - 99s - loss: 0.3194 - dice_multi: 0.6191
+Epoch 6/100
+400/400 - 99s - loss: 0.2714 - dice_multi: 0.6678
+Epoch 7/100
+400/400 - 99s - loss: 0.2422 - dice_multi: 0.7057
+Epoch 8/100
+400/400 - 99s - loss: 0.2316 - dice_multi: 0.7185
+Epoch 9/100
+400/400 - 99s - loss: 0.2042 - dice_multi: 0.7390
+Epoch 10/100
+400/400 - 99s - loss: 0.1883 - dice_multi: 0.7578
+Epoch 11/100
+400/400 - 99s - loss: 0.1762 - dice_multi: 0.7634
+Epoch 12/100
+400/400 - 99s - loss: 0.1646 - dice_multi: 0.7878
+Epoch 13/100
+400/400 - 99s - loss: 0.1607 - dice_multi: 0.7902
+Epoch 14/100
+400/400 - 99s - loss: 0.1689 - dice_multi: 0.7838
+Epoch 15/100
+400/400 - 99s - loss: 0.1537 - dice_multi: 0.7999
+Epoch 16/100
+400/400 - 99s - loss: 0.1394 - dice_multi: 0.8159
+Epoch 17/100
+400/400 - 99s - loss: 0.1456 - dice_multi: 0.8082
+Epoch 18/100
+400/400 - 99s - loss: 0.1428 - dice_multi: 0.8089
+Epoch 19/100
+400/400 - 99s - loss: 0.1498 - dice_multi: 0.7973
+Epoch 20/100
+400/400 - 99s - loss: 0.1384 - dice_multi: 0.8204
+Epoch 21/100
+400/400 - 99s - loss: 0.1264 - dice_multi: 0.8243
+Epoch 22/100
+400/400 - 99s - loss: 0.1273 - dice_multi: 0.8189
+Epoch 23/100
+400/400 - 99s - loss: 0.1283 - dice_multi: 0.8281
+Epoch 24/100
+400/400 - 99s - loss: 0.1240 - dice_multi: 0.8318
+Epoch 25/100
+400/400 - 99s - loss: 0.1171 - dice_multi: 0.8362
+Epoch 26/100
+400/400 - 99s - loss: 0.1473 - dice_multi: 0.8070
+Epoch 27/100
+400/400 - 99s - loss: 0.1211 - dice_multi: 0.8284
+Epoch 28/100
+400/400 - 99s - loss: 0.1224 - dice_multi: 0.8431
+Epoch 29/100
+400/400 - 99s - loss: 0.1146 - dice_multi: 0.8452
+Epoch 30/100
+400/400 - 99s - loss: 0.1190 - dice_multi: 0.8432
+Epoch 31/100
+400/400 - 99s - loss: 0.1164 - dice_multi: 0.8447
+Epoch 32/100
+400/400 - 98s - loss: 0.1138 - dice_multi: 0.8480
+Epoch 33/100
+400/400 - 99s - loss: 0.1166 - dice_multi: 0.8392
+Epoch 34/100
+400/400 - 99s - loss: 0.1115 - dice_multi: 0.8459
+Epoch 35/100
+400/400 - 99s - loss: 0.1149 - dice_multi: 0.8455
+Epoch 36/100
+400/400 - 99s - loss: 0.1050 - dice_multi: 0.8529
+Epoch 37/100
+400/400 - 99s - loss: 0.1066 - dice_multi: 0.8516
+Epoch 38/100
+400/400 - 99s - loss: 0.1138 - dice_multi: 0.8445
+Epoch 39/100
+400/400 - 99s - loss: 0.1072 - dice_multi: 0.8562
+Epoch 40/100
+400/400 - 99s - loss: 0.1060 - dice_multi: 0.8570
+Epoch 41/100
+400/400 - 99s - loss: 0.1321 - dice_multi: 0.8250
+Epoch 42/100
+400/400 - 99s - loss: 0.1075 - dice_multi: 0.8434
+Epoch 43/100
+400/400 - 99s - loss: 0.1027 - dice_multi: 0.8529
+Epoch 44/100
+400/400 - 99s - loss: 0.1028 - dice_multi: 0.8658
+Epoch 45/100
+400/400 - 99s - loss: 0.1034 - dice_multi: 0.8592
+Epoch 46/100
+400/400 - 100s - loss: 0.0971 - dice_multi: 0.8605
+Epoch 47/100
+400/400 - 99s - loss: 0.1061 - dice_multi: 0.8541
+Epoch 48/100
+400/400 - 99s - loss: 0.1019 - dice_multi: 0.8580
+Epoch 49/100
+400/400 - 100s - loss: 0.1013 - dice_multi: 0.8623
+Epoch 50/100
+400/400 - 99s - loss: 0.0991 - dice_multi: 0.8571
+Epoch 51/100
+400/400 - 99s - loss: 0.0976 - dice_multi: 0.8664
+Epoch 52/100
+400/400 - 99s - loss: 0.1048 - dice_multi: 0.8512
+Epoch 53/100
+400/400 - 99s - loss: 0.1083 - dice_multi: 0.8587
+Epoch 54/100
+400/400 - 99s - loss: 0.1021 - dice_multi: 0.8628
+Epoch 55/100
+400/400 - 99s - loss: 0.0965 - dice_multi: 0.8609
+Epoch 56/100
+400/400 - 99s - loss: 0.0959 - dice_multi: 0.8659
+Epoch 57/100
+400/400 - 99s - loss: 0.0936 - dice_multi: 0.8662
+Epoch 58/100
+400/400 - 99s - loss: 0.0966 - dice_multi: 0.8675
+Epoch 59/100
+400/400 - 99s - loss: 0.0963 - dice_multi: 0.8650
+Epoch 60/100
+400/400 - 100s - loss: 0.0933 - dice_multi: 0.8645
+Epoch 61/100
+400/400 - 99s - loss: 0.0926 - dice_multi: 0.8707
+Epoch 62/100
+400/400 - 99s - loss: 0.0953 - dice_multi: 0.8648
+Epoch 63/100
+400/400 - 99s - loss: 0.1050 - dice_multi: 0.8533
+Epoch 64/100
+400/400 - 99s - loss: 0.0923 - dice_multi: 0.8692
+Epoch 65/100
+400/400 - 99s - loss: 0.0916 - dice_multi: 0.8726
+Epoch 66/100
+400/400 - 100s - loss: 0.0932 - dice_multi: 0.8784
+Epoch 67/100
+400/400 - 100s - loss: 0.0917 - dice_multi: 0.8712
+Epoch 68/100
+400/400 - 100s - loss: 0.0906 - dice_multi: 0.8698
+Epoch 69/100
+400/400 - 99s - loss: 0.0881 - dice_multi: 0.8759
+Epoch 70/100
+400/400 - 100s - loss: 0.0899 - dice_multi: 0.8644
+Epoch 71/100
+400/400 - 99s - loss: 0.0902 - dice_multi: 0.8713
+Epoch 72/100
+400/400 - 100s - loss: 0.0876 - dice_multi: 0.8698
+Epoch 73/100
+400/400 - 100s - loss: 0.0888 - dice_multi: 0.8699
+Epoch 74/100
+400/400 - 99s - loss: 0.0903 - dice_multi: 0.8650
+Epoch 75/100
+400/400 - 100s - loss: 0.0889 - dice_multi: 0.8713
+Epoch 76/100
+400/400 - 99s - loss: 0.0879 - dice_multi: 0.8703
+Epoch 77/100
+400/400 - 100s - loss: 0.0871 - dice_multi: 0.8789
+Epoch 78/100
+400/400 - 100s - loss: 0.0873 - dice_multi: 0.8721
+Epoch 79/100
+400/400 - 100s - loss: 0.0860 - dice_multi: 0.8681
+Epoch 80/100
+400/400 - 100s - loss: 0.0852 - dice_multi: 0.8769
+Epoch 81/100
+400/400 - 100s - loss: 0.0865 - dice_multi: 0.8790
+Epoch 82/100
+400/400 - 100s - loss: 0.0836 - dice_multi: 0.8755
+Epoch 83/100
+400/400 - 100s - loss: 0.0841 - dice_multi: 0.8779
+Epoch 84/100
+400/400 - 100s - loss: 0.0852 - dice_multi: 0.8850
+Epoch 85/100
+400/400 - 99s - loss: 0.0838 - dice_multi: 0.8832
+Epoch 86/100
+400/400 - 99s - loss: 0.1022 - dice_multi: 0.8603
+Epoch 87/100
+400/400 - 99s - loss: 0.0856 - dice_multi: 0.8787
+Epoch 88/100
+400/400 - 99s - loss: 0.0828 - dice_multi: 0.8774
+Epoch 89/100
+400/400 - 100s - loss: 0.0830 - dice_multi: 0.8798
+Epoch 90/100
+400/400 - 100s - loss: 0.0833 - dice_multi: 0.8798
+Epoch 91/100
+400/400 - 100s - loss: 0.0836 - dice_multi: 0.8877
+Epoch 92/100
+400/400 - 100s - loss: 0.0852 - dice_multi: 0.8781
+Epoch 93/100
+400/400 - 100s - loss: 0.0813 - dice_multi: 0.8778
+Epoch 94/100
+400/400 - 99s - loss: 0.0826 - dice_multi: 0.8826
+Epoch 95/100
+400/400 - 99s - loss: 0.0829 - dice_multi: 0.8829
+Epoch 96/100
+400/400 - 99s - loss: 0.0819 - dice_multi: 0.8746
+Epoch 97/100
+400/400 - 99s - loss: 0.0827 - dice_multi: 0.8774
+Epoch 98/100
+400/400 - 99s - loss: 0.0895 - dice_multi: 0.8672
+Epoch 99/100
+400/400 - 99s - loss: 0.0818 - dice_multi: 0.8859
+Epoch 100/100
+400/400 - 99s - loss: 0.0820 - dice_multi: 0.8769
+2021-09-19 12:26:57.610158: I tensorflow/stream_executor/cuda/cuda_blas.cc:1839] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+training time: 9955.959203958511
+executation time:143.49754090309142
+---------fold--2---------
+training set:  [ 0  1  2  3  4  5  6  7  8  9 20 21 22 23 24 25 26 27 28 29 30 31 32 33
+ 34 35 36 37 38 39]
+training set size:  30
+testing set:  [10 11 12 13 14 15 16 17 18 19]
+testing set size:  10
+..generator_len: 400
+..training_n_subject: 30
+..training_n_patch_per_sub: 2421185
+Epoch 1/100
+400/400 - 103s - loss: 0.6707 - dice_multi: 0.3767
+Epoch 2/100
+400/400 - 101s - loss: 0.5011 - dice_multi: 0.4498
+Epoch 3/100
+400/400 - 101s - loss: 0.4484 - dice_multi: 0.4893
+Epoch 4/100
+400/400 - 101s - loss: 0.3957 - dice_multi: 0.5313
+Epoch 5/100
+400/400 - 101s - loss: 0.3436 - dice_multi: 0.5911
+Epoch 6/100
+400/400 - 101s - loss: 0.3184 - dice_multi: 0.6204
+Epoch 7/100
+400/400 - 101s - loss: 0.2596 - dice_multi: 0.6671
+Epoch 8/100
+400/400 - 101s - loss: 0.2391 - dice_multi: 0.6914
+Epoch 9/100
+400/400 - 101s - loss: 0.2266 - dice_multi: 0.7183
+Epoch 10/100
+400/400 - 102s - loss: 0.2058 - dice_multi: 0.7303
+Epoch 11/100
+400/400 - 101s - loss: 0.1955 - dice_multi: 0.7434
+Epoch 12/100
+400/400 - 102s - loss: 0.1817 - dice_multi: 0.7564
+Epoch 13/100
+400/400 - 101s - loss: 0.1755 - dice_multi: 0.7696
+Epoch 14/100
+400/400 - 102s - loss: 0.1705 - dice_multi: 0.7702
+Epoch 15/100
+400/400 - 101s - loss: 0.1580 - dice_multi: 0.7821
+Epoch 16/100
+400/400 - 102s - loss: 0.1632 - dice_multi: 0.7892
+Epoch 17/100
+400/400 - 101s - loss: 0.1574 - dice_multi: 0.7915
+Epoch 18/100
+400/400 - 101s - loss: 0.1510 - dice_multi: 0.7871
+Epoch 19/100
+400/400 - 101s - loss: 0.1434 - dice_multi: 0.7990
+Epoch 20/100
+400/400 - 102s - loss: 0.1409 - dice_multi: 0.8034
+Epoch 21/100
+400/400 - 101s - loss: 0.1376 - dice_multi: 0.8088
+Epoch 22/100
+400/400 - 101s - loss: 0.1525 - dice_multi: 0.7888
+Epoch 23/100
+400/400 - 101s - loss: 0.1453 - dice_multi: 0.7985
+Epoch 24/100
+400/400 - 101s - loss: 0.1305 - dice_multi: 0.8215
+Epoch 25/100
+400/400 - 102s - loss: 0.1260 - dice_multi: 0.8179
+Epoch 26/100
+400/400 - 101s - loss: 0.1318 - dice_multi: 0.8160
+Epoch 27/100
+400/400 - 102s - loss: 0.1416 - dice_multi: 0.7976
+Epoch 28/100
+400/400 - 101s - loss: 0.1255 - dice_multi: 0.8241
+Epoch 29/100
+400/400 - 102s - loss: 0.1184 - dice_multi: 0.8335
+Epoch 30/100
+400/400 - 101s - loss: 0.1202 - dice_multi: 0.8259
+Epoch 31/100
+400/400 - 100s - loss: 0.1346 - dice_multi: 0.8191
+Epoch 32/100
+400/400 - 101s - loss: 0.1212 - dice_multi: 0.8282
+Epoch 33/100
+400/400 - 101s - loss: 0.1159 - dice_multi: 0.8330
+Epoch 34/100
+400/400 - 101s - loss: 0.1299 - dice_multi: 0.8241
+Epoch 35/100
+400/400 - 101s - loss: 0.1193 - dice_multi: 0.8260
+Epoch 36/100
+400/400 - 101s - loss: 0.1132 - dice_multi: 0.8387
+Epoch 37/100
+400/400 - 101s - loss: 0.1142 - dice_multi: 0.8399
+Epoch 38/100
+400/400 - 101s - loss: 0.1114 - dice_multi: 0.8425
+Epoch 39/100
+400/400 - 101s - loss: 0.1157 - dice_multi: 0.8330
+Epoch 40/100
+400/400 - 101s - loss: 0.1169 - dice_multi: 0.8378
+Epoch 41/100
+400/400 - 101s - loss: 0.1078 - dice_multi: 0.8450
+Epoch 42/100
+400/400 - 102s - loss: 0.1189 - dice_multi: 0.8310
+Epoch 43/100
+400/400 - 101s - loss: 0.1094 - dice_multi: 0.8440
+Epoch 44/100
+400/400 - 101s - loss: 0.1061 - dice_multi: 0.8440
+Epoch 45/100
+400/400 - 101s - loss: 0.1057 - dice_multi: 0.8449
+Epoch 46/100
+400/400 - 101s - loss: 0.1087 - dice_multi: 0.8372
+Epoch 47/100
+400/400 - 101s - loss: 0.1056 - dice_multi: 0.8439
+Epoch 48/100
+400/400 - 102s - loss: 0.1073 - dice_multi: 0.8446
+Epoch 49/100
+400/400 - 101s - loss: 0.1069 - dice_multi: 0.8550
+Epoch 50/100
+400/400 - 101s - loss: 0.1220 - dice_multi: 0.8387
+Epoch 51/100
+400/400 - 101s - loss: 0.1013 - dice_multi: 0.8502
+Epoch 52/100
+400/400 - 101s - loss: 0.1017 - dice_multi: 0.8436
+Epoch 53/100
+400/400 - 101s - loss: 0.1005 - dice_multi: 0.8617
+Epoch 54/100
+400/400 - 101s - loss: 0.1036 - dice_multi: 0.8457
+Epoch 55/100
+400/400 - 101s - loss: 0.1032 - dice_multi: 0.8555
+Epoch 56/100
+400/400 - 101s - loss: 0.1019 - dice_multi: 0.8575
+Epoch 57/100
+400/400 - 101s - loss: 0.1004 - dice_multi: 0.8479
+Epoch 58/100
+400/400 - 101s - loss: 0.1043 - dice_multi: 0.8511
+Epoch 59/100
+400/400 - 101s - loss: 0.1011 - dice_multi: 0.8563
+Epoch 60/100
+400/400 - 101s - loss: 0.1013 - dice_multi: 0.8577
+Epoch 61/100
+400/400 - 101s - loss: 0.1014 - dice_multi: 0.8502
+Epoch 62/100
+400/400 - 101s - loss: 0.0976 - dice_multi: 0.8545
+Epoch 63/100
+400/400 - 101s - loss: 0.1257 - dice_multi: 0.8181
+Epoch 64/100
+400/400 - 101s - loss: 0.1007 - dice_multi: 0.8437
+Epoch 65/100
+400/400 - 101s - loss: 0.0981 - dice_multi: 0.8488
+Epoch 66/100
+400/400 - 101s - loss: 0.0970 - dice_multi: 0.8583
+Epoch 67/100
+400/400 - 101s - loss: 0.0956 - dice_multi: 0.8568
+Epoch 68/100
+400/400 - 101s - loss: 0.0952 - dice_multi: 0.8608
+Epoch 69/100
+400/400 - 101s - loss: 0.0943 - dice_multi: 0.8569
+Epoch 70/100
+400/400 - 102s - loss: 0.0931 - dice_multi: 0.8539
+Epoch 71/100
+400/400 - 101s - loss: 0.0964 - dice_multi: 0.8583
+Epoch 72/100
+400/400 - 101s - loss: 0.0944 - dice_multi: 0.8533
+Epoch 73/100
+400/400 - 100s - loss: 0.0961 - dice_multi: 0.8547
+Epoch 74/100
+400/400 - 101s - loss: 0.0936 - dice_multi: 0.8568
+Epoch 75/100
+400/400 - 101s - loss: 0.0976 - dice_multi: 0.8533
+Epoch 76/100
+400/400 - 101s - loss: 0.0947 - dice_multi: 0.8589
+Epoch 77/100
+400/400 - 101s - loss: 0.0934 - dice_multi: 0.8611
+Epoch 78/100
+400/400 - 101s - loss: 0.0950 - dice_multi: 0.8602
+Epoch 79/100
+400/400 - 101s - loss: 0.0971 - dice_multi: 0.8627
+Epoch 80/100
+400/400 - 101s - loss: 0.0925 - dice_multi: 0.8606
+Epoch 81/100
+400/400 - 101s - loss: 0.0928 - dice_multi: 0.8689
+Epoch 82/100
+400/400 - 101s - loss: 0.0910 - dice_multi: 0.8636
+Epoch 83/100
+400/400 - 101s - loss: 0.0915 - dice_multi: 0.8616
+Epoch 84/100
+400/400 - 101s - loss: 0.1160 - dice_multi: 0.8376
+Epoch 85/100
+400/400 - 101s - loss: 0.0936 - dice_multi: 0.8559
+Epoch 86/100
+400/400 - 101s - loss: 0.0920 - dice_multi: 0.8663
+Epoch 87/100
+400/400 - 101s - loss: 0.0884 - dice_multi: 0.8648
+Epoch 88/100
+400/400 - 101s - loss: 0.0932 - dice_multi: 0.8633
+Epoch 89/100
+400/400 - 101s - loss: 0.0875 - dice_multi: 0.8585
+Epoch 90/100
+400/400 - 101s - loss: 0.0883 - dice_multi: 0.8684
+Epoch 91/100
+400/400 - 101s - loss: 0.0877 - dice_multi: 0.8643
+Epoch 92/100
+400/400 - 101s - loss: 0.1016 - dice_multi: 0.8611
+Epoch 93/100
+400/400 - 101s - loss: 0.0932 - dice_multi: 0.8569
+Epoch 94/100
+400/400 - 101s - loss: 0.0888 - dice_multi: 0.8643
+Epoch 95/100
+400/400 - 103s - loss: 0.0905 - dice_multi: 0.8663
+Epoch 96/100
+400/400 - 101s - loss: 0.0896 - dice_multi: 0.8698
+Epoch 97/100
+400/400 - 101s - loss: 0.0860 - dice_multi: 0.8659
+Epoch 98/100
+400/400 - 101s - loss: 0.0898 - dice_multi: 0.8650
+Epoch 99/100
+400/400 - 101s - loss: 0.0869 - dice_multi: 0.8659
+Epoch 100/100
+400/400 - 102s - loss: 0.0874 - dice_multi: 0.8660
+training time: 10127.689545869827
+executation time:143.46026690006255
+---------fold--3---------
+training set:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 30 31 32 33
+ 34 35 36 37 38 39]
+training set size:  30
+testing set:  [20 21 22 23 24 25 26 27 28 29]
+testing set size:  10
+..generator_len: 400
+..training_n_subject: 30
+..training_n_patch_per_sub: 2421185
+Epoch 1/100
+400/400 - 102s - loss: 0.6327 - dice_multi: 0.3601
+Epoch 2/100
+400/400 - 100s - loss: 0.5227 - dice_multi: 0.4108
+Epoch 3/100
+400/400 - 100s - loss: 0.4640 - dice_multi: 0.4483
+Epoch 4/100
+400/400 - 100s - loss: 0.3972 - dice_multi: 0.5026
+Epoch 5/100
+400/400 - 99s - loss: 0.3644 - dice_multi: 0.5382
+Epoch 6/100
+400/400 - 99s - loss: 0.3349 - dice_multi: 0.5884
+Epoch 7/100
+400/400 - 100s - loss: 0.3052 - dice_multi: 0.6172
+Epoch 8/100
+400/400 - 100s - loss: 0.2640 - dice_multi: 0.6513
+Epoch 9/100
+400/400 - 100s - loss: 0.2527 - dice_multi: 0.6717
+Epoch 10/100
+400/400 - 100s - loss: 0.2138 - dice_multi: 0.7091
+Epoch 11/100
+400/400 - 100s - loss: 0.2100 - dice_multi: 0.7232
+Epoch 12/100
+400/400 - 100s - loss: 0.2073 - dice_multi: 0.7306
+Epoch 13/100
+400/400 - 100s - loss: 0.1939 - dice_multi: 0.7399
+Epoch 14/100
+400/400 - 100s - loss: 0.1771 - dice_multi: 0.7584
+Epoch 15/100
+400/400 - 100s - loss: 0.1668 - dice_multi: 0.7644
+Epoch 16/100
+400/400 - 100s - loss: 0.1693 - dice_multi: 0.7639
+Epoch 17/100
+400/400 - 101s - loss: 0.1593 - dice_multi: 0.7727
+Epoch 18/100
+400/400 - 101s - loss: 0.1775 - dice_multi: 0.7656
+Epoch 19/100
+400/400 - 101s - loss: 0.1449 - dice_multi: 0.7822
+Epoch 20/100
+400/400 - 100s - loss: 0.1478 - dice_multi: 0.7930
+Epoch 21/100
+400/400 - 100s - loss: 0.1438 - dice_multi: 0.7923
+Epoch 22/100
+400/400 - 101s - loss: 0.1465 - dice_multi: 0.7966
+Epoch 23/100
+400/400 - 102s - loss: 0.1393 - dice_multi: 0.8021
+Epoch 24/100
+400/400 - 101s - loss: 0.1385 - dice_multi: 0.7956
+Epoch 25/100
+400/400 - 100s - loss: 0.1321 - dice_multi: 0.8035
+Epoch 26/100
+400/400 - 101s - loss: 0.1414 - dice_multi: 0.8049
+Epoch 27/100
+400/400 - 101s - loss: 0.1301 - dice_multi: 0.8095
+Epoch 28/100
+400/400 - 101s - loss: 0.1318 - dice_multi: 0.8156
+Epoch 29/100
+400/400 - 101s - loss: 0.1622 - dice_multi: 0.7747
+Epoch 30/100
+400/400 - 101s - loss: 0.1246 - dice_multi: 0.8182
+Epoch 31/100
+400/400 - 101s - loss: 0.1234 - dice_multi: 0.8200
+Epoch 32/100
+400/400 - 101s - loss: 0.1218 - dice_multi: 0.8293
+Epoch 33/100
+400/400 - 102s - loss: 0.1271 - dice_multi: 0.8103
+Epoch 34/100
+400/400 - 102s - loss: 0.1214 - dice_multi: 0.8251
+Epoch 35/100
+400/400 - 101s - loss: 0.1160 - dice_multi: 0.8242
+Epoch 36/100
+400/400 - 101s - loss: 0.1173 - dice_multi: 0.8259
+Epoch 37/100
+400/400 - 100s - loss: 0.1225 - dice_multi: 0.8096
+Epoch 38/100
+400/400 - 101s - loss: 0.1185 - dice_multi: 0.8223
+Epoch 39/100
+400/400 - 102s - loss: 0.1134 - dice_multi: 0.8358
+Epoch 40/100
+400/400 - 101s - loss: 0.1127 - dice_multi: 0.8366
+Epoch 41/100
+400/400 - 101s - loss: 0.1267 - dice_multi: 0.8216
+Epoch 42/100
+400/400 - 101s - loss: 0.1317 - dice_multi: 0.8100
+Epoch 43/100
+400/400 - 102s - loss: 0.1124 - dice_multi: 0.8340
+Epoch 44/100
+400/400 - 101s - loss: 0.1118 - dice_multi: 0.8313
+Epoch 45/100
+400/400 - 101s - loss: 0.1089 - dice_multi: 0.8373
+Epoch 46/100
+400/400 - 101s - loss: 0.1071 - dice_multi: 0.8373
+Epoch 47/100
+400/400 - 101s - loss: 0.1070 - dice_multi: 0.8390
+Epoch 48/100
+400/400 - 102s - loss: 0.1104 - dice_multi: 0.8303
+Epoch 49/100
+400/400 - 101s - loss: 0.1219 - dice_multi: 0.8202
+Epoch 50/100
+400/400 - 101s - loss: 0.1041 - dice_multi: 0.8359
+Epoch 51/100
+400/400 - 102s - loss: 0.1025 - dice_multi: 0.8415
+Epoch 52/100
+400/400 - 101s - loss: 0.1025 - dice_multi: 0.8360
+Epoch 53/100
+400/400 - 101s - loss: 0.1039 - dice_multi: 0.8458
+Epoch 54/100
+400/400 - 102s - loss: 0.1064 - dice_multi: 0.8309
+Epoch 55/100
+400/400 - 101s - loss: 0.1067 - dice_multi: 0.8419
+Epoch 56/100
+400/400 - 101s - loss: 0.1031 - dice_multi: 0.8444
+Epoch 57/100
+400/400 - 101s - loss: 0.1089 - dice_multi: 0.8314
+Epoch 58/100
+400/400 - 101s - loss: 0.1028 - dice_multi: 0.8450
+Epoch 59/100
+400/400 - 101s - loss: 0.1009 - dice_multi: 0.8392
+Epoch 60/100
+400/400 - 102s - loss: 0.0984 - dice_multi: 0.8400
+Epoch 61/100
+400/400 - 102s - loss: 0.1017 - dice_multi: 0.8466
+Epoch 62/100
+400/400 - 102s - loss: 0.0974 - dice_multi: 0.8428
+Epoch 63/100
+400/400 - 101s - loss: 0.0994 - dice_multi: 0.8387
+Epoch 64/100
+400/400 - 102s - loss: 0.1148 - dice_multi: 0.8309
+Epoch 65/100
+400/400 - 101s - loss: 0.0970 - dice_multi: 0.8473
+Epoch 66/100
+400/400 - 101s - loss: 0.0962 - dice_multi: 0.8505
+Epoch 67/100
+400/400 - 101s - loss: 0.0967 - dice_multi: 0.8486
+Epoch 68/100
+400/400 - 101s - loss: 0.0971 - dice_multi: 0.8550
+Epoch 69/100
+400/400 - 101s - loss: 0.0963 - dice_multi: 0.8627
+Epoch 70/100
+400/400 - 101s - loss: 0.0947 - dice_multi: 0.8542
+Epoch 71/100
+400/400 - 101s - loss: 0.0943 - dice_multi: 0.8564
+Epoch 72/100
+400/400 - 101s - loss: 0.0933 - dice_multi: 0.8526
+Epoch 73/100
+400/400 - 101s - loss: 0.0934 - dice_multi: 0.8450
+Epoch 74/100
+400/400 - 101s - loss: 0.0931 - dice_multi: 0.8564
+Epoch 75/100
+400/400 - 101s - loss: 0.0909 - dice_multi: 0.8510
+Epoch 76/100
+400/400 - 101s - loss: 0.0970 - dice_multi: 0.8573
+Epoch 77/100
+400/400 - 101s - loss: 0.0952 - dice_multi: 0.8564
+Epoch 78/100
+400/400 - 101s - loss: 0.0912 - dice_multi: 0.8590
+Epoch 79/100
+400/400 - 100s - loss: 0.0939 - dice_multi: 0.8593
+Epoch 80/100
+400/400 - 101s - loss: 0.0935 - dice_multi: 0.8492
+Epoch 81/100
+400/400 - 100s - loss: 0.0926 - dice_multi: 0.8547
+Epoch 82/100
+400/400 - 101s - loss: 0.0918 - dice_multi: 0.8602
+Epoch 83/100
+400/400 - 101s - loss: 0.1100 - dice_multi: 0.8382
+Epoch 84/100
+400/400 - 102s - loss: 0.0986 - dice_multi: 0.8535
+Epoch 85/100
+400/400 - 102s - loss: 0.0910 - dice_multi: 0.8505
+Epoch 86/100
+400/400 - 102s - loss: 0.0914 - dice_multi: 0.8586
+Epoch 87/100
+400/400 - 101s - loss: 0.0904 - dice_multi: 0.8611
+Epoch 88/100
+400/400 - 101s - loss: 0.0931 - dice_multi: 0.8595
+Epoch 89/100
+400/400 - 101s - loss: 0.0875 - dice_multi: 0.8599
+Epoch 90/100
+400/400 - 101s - loss: 0.0879 - dice_multi: 0.8569
+Epoch 91/100
+400/400 - 102s - loss: 0.0893 - dice_multi: 0.8592
+Epoch 92/100
+400/400 - 102s - loss: 0.0871 - dice_multi: 0.8543
+Epoch 93/100
+400/400 - 102s - loss: 0.0899 - dice_multi: 0.8572
+Epoch 94/100
+400/400 - 101s - loss: 0.0876 - dice_multi: 0.8618
+Epoch 95/100
+400/400 - 102s - loss: 0.0868 - dice_multi: 0.8621
+Epoch 96/100
+400/400 - 101s - loss: 0.0884 - dice_multi: 0.8617
+Epoch 97/100
+400/400 - 102s - loss: 0.0872 - dice_multi: 0.8684
+Epoch 98/100
+400/400 - 102s - loss: 0.0882 - dice_multi: 0.8635
+Epoch 99/100
+400/400 - 102s - loss: 0.0844 - dice_multi: 0.8588
+Epoch 100/100
+400/400 - 102s - loss: 0.0859 - dice_multi: 0.8628
+training time: 10106.306405067444
+executation time:144.4764270544052
+---------fold--4---------
+training set:  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 24 25 26 27 28 29]
+training set size:  30
+testing set:  [30 31 32 33 34 35 36 37 38 39 40]
+testing set size:  11
+..generator_len: 400
+..training_n_subject: 30
+..training_n_patch_per_sub: 2421185
+Epoch 1/100
+400/400 - 104s - loss: 0.6682 - dice_multi: 0.3982
+Epoch 2/100
+400/400 - 101s - loss: 0.5368 - dice_multi: 0.4667
+Epoch 3/100
+400/400 - 101s - loss: 0.4510 - dice_multi: 0.5360
+Epoch 4/100
+400/400 - 101s - loss: 0.3864 - dice_multi: 0.5881
+Epoch 5/100
+400/400 - 101s - loss: 0.3478 - dice_multi: 0.6261
+Epoch 6/100
+400/400 - 101s - loss: 0.3041 - dice_multi: 0.6742
+Epoch 7/100
+400/400 - 101s - loss: 0.2729 - dice_multi: 0.7043
+Epoch 8/100
+400/400 - 101s - loss: 0.2538 - dice_multi: 0.7240
+Epoch 9/100
+400/400 - 102s - loss: 0.2230 - dice_multi: 0.7329
+Epoch 10/100
+400/400 - 101s - loss: 0.2065 - dice_multi: 0.7642
+Epoch 11/100
+400/400 - 101s - loss: 0.2068 - dice_multi: 0.7601
+Epoch 12/100
+400/400 - 101s - loss: 0.1998 - dice_multi: 0.7662
+Epoch 13/100
+400/400 - 102s - loss: 0.1888 - dice_multi: 0.7808
+Epoch 14/100
+400/400 - 102s - loss: 0.1831 - dice_multi: 0.7822
+Epoch 15/100
+400/400 - 102s - loss: 0.1722 - dice_multi: 0.7979
+Epoch 16/100
+400/400 - 102s - loss: 0.1630 - dice_multi: 0.7984
+Epoch 17/100
+400/400 - 102s - loss: 0.1640 - dice_multi: 0.8092
+Epoch 18/100
+400/400 - 102s - loss: 0.1959 - dice_multi: 0.7808
+Epoch 19/100
+400/400 - 102s - loss: 0.1504 - dice_multi: 0.8129
+Epoch 20/100
+400/400 - 102s - loss: 0.1477 - dice_multi: 0.8235
+Epoch 21/100
+400/400 - 102s - loss: 0.1487 - dice_multi: 0.8202
+Epoch 22/100
+400/400 - 103s - loss: 0.1509 - dice_multi: 0.8198
+Epoch 23/100
+400/400 - 101s - loss: 0.1409 - dice_multi: 0.8272
+Epoch 24/100
+400/400 - 101s - loss: 0.1667 - dice_multi: 0.8067
+Epoch 25/100
+400/400 - 102s - loss: 0.1378 - dice_multi: 0.8278
+Epoch 26/100
+400/400 - 102s - loss: 0.1326 - dice_multi: 0.8401
+Epoch 27/100
+400/400 - 102s - loss: 0.1342 - dice_multi: 0.8380
+Epoch 28/100
+400/400 - 101s - loss: 0.1415 - dice_multi: 0.8258
+Epoch 29/100
+400/400 - 102s - loss: 0.1302 - dice_multi: 0.8329
+Epoch 30/100
+400/400 - 101s - loss: 0.1264 - dice_multi: 0.8350
+Epoch 31/100
+400/400 - 101s - loss: 0.1369 - dice_multi: 0.8332
+Epoch 32/100
+400/400 - 101s - loss: 0.1397 - dice_multi: 0.8339
+Epoch 33/100
+400/400 - 102s - loss: 0.1256 - dice_multi: 0.8455
+Epoch 34/100
+400/400 - 101s - loss: 0.1249 - dice_multi: 0.8412
+Epoch 35/100
+400/400 - 101s - loss: 0.1227 - dice_multi: 0.8429
+Epoch 36/100
+400/400 - 101s - loss: 0.1542 - dice_multi: 0.8228
+Epoch 37/100
+400/400 - 101s - loss: 0.1260 - dice_multi: 0.8392
+Epoch 38/100
+400/400 - 102s - loss: 0.1224 - dice_multi: 0.8437
+Epoch 39/100
+400/400 - 101s - loss: 0.1189 - dice_multi: 0.8429
+Epoch 40/100
+400/400 - 101s - loss: 0.1174 - dice_multi: 0.8491
+Epoch 41/100
+400/400 - 101s - loss: 0.1157 - dice_multi: 0.8510
+Epoch 42/100
+400/400 - 101s - loss: 0.1180 - dice_multi: 0.8469
+Epoch 43/100
+400/400 - 102s - loss: 0.1161 - dice_multi: 0.8524
+Epoch 44/100
+400/400 - 101s - loss: 0.1143 - dice_multi: 0.8542
+Epoch 45/100
+400/400 - 101s - loss: 0.1170 - dice_multi: 0.8528
+Epoch 46/100
+400/400 - 102s - loss: 0.1168 - dice_multi: 0.8555
+Epoch 47/100
+400/400 - 102s - loss: 0.1131 - dice_multi: 0.8500
+Epoch 48/100
+400/400 - 101s - loss: 0.1236 - dice_multi: 0.8490
+Epoch 49/100
+400/400 - 101s - loss: 0.1147 - dice_multi: 0.8522
+Epoch 50/100
+400/400 - 102s - loss: 0.1114 - dice_multi: 0.8537
+Epoch 51/100
+400/400 - 101s - loss: 0.1080 - dice_multi: 0.8611
+Epoch 52/100
+400/400 - 101s - loss: 0.1072 - dice_multi: 0.8598
+Epoch 53/100
+400/400 - 102s - loss: 0.1160 - dice_multi: 0.8599
+Epoch 54/100
+400/400 - 102s - loss: 0.1141 - dice_multi: 0.8560
+Epoch 55/100
+400/400 - 101s - loss: 0.1123 - dice_multi: 0.8548
+Epoch 56/100
+400/400 - 102s - loss: 0.1079 - dice_multi: 0.8567
+Epoch 57/100
+400/400 - 102s - loss: 0.1070 - dice_multi: 0.8628
+Epoch 58/100
+400/400 - 102s - loss: 0.1068 - dice_multi: 0.8606
+Epoch 59/100
+400/400 - 102s - loss: 0.1055 - dice_multi: 0.8674
+Epoch 60/100
+400/400 - 102s - loss: 0.1036 - dice_multi: 0.8641
+Epoch 61/100
+400/400 - 102s - loss: 0.1325 - dice_multi: 0.8357
+Epoch 62/100
+400/400 - 101s - loss: 0.1082 - dice_multi: 0.8497
+Epoch 63/100
+400/400 - 102s - loss: 0.1037 - dice_multi: 0.8674
+Epoch 64/100
+400/400 - 102s - loss: 0.1039 - dice_multi: 0.8605
+Epoch 65/100
+400/400 - 101s - loss: 0.1016 - dice_multi: 0.8645
+Epoch 66/100
+400/400 - 101s - loss: 0.1006 - dice_multi: 0.8646
+Epoch 67/100
+400/400 - 101s - loss: 0.1015 - dice_multi: 0.8659
+Epoch 68/100
+400/400 - 101s - loss: 0.1045 - dice_multi: 0.8651
+Epoch 69/100
+400/400 - 102s - loss: 0.1005 - dice_multi: 0.8657
+Epoch 70/100
+400/400 - 102s - loss: 0.0969 - dice_multi: 0.8643
+Epoch 71/100
+400/400 - 102s - loss: 0.1012 - dice_multi: 0.8674
+Epoch 72/100
+400/400 - 102s - loss: 0.1018 - dice_multi: 0.8680
+Epoch 73/100
+400/400 - 101s - loss: 0.1027 - dice_multi: 0.8629
+Epoch 74/100
+400/400 - 101s - loss: 0.0984 - dice_multi: 0.8739
+Epoch 75/100
+400/400 - 101s - loss: 0.1019 - dice_multi: 0.8767
+Epoch 76/100
+400/400 - 102s - loss: 0.0984 - dice_multi: 0.8689
+Epoch 77/100
+400/400 - 101s - loss: 0.1032 - dice_multi: 0.8569
+Epoch 78/100
+400/400 - 101s - loss: 0.0999 - dice_multi: 0.8680
+Epoch 79/100
+400/400 - 102s - loss: 0.0977 - dice_multi: 0.8713
+Epoch 80/100
+400/400 - 101s - loss: 0.0997 - dice_multi: 0.8699
+Epoch 81/100
+400/400 - 101s - loss: 0.0973 - dice_multi: 0.8715
+Epoch 82/100
+400/400 - 101s - loss: 0.0957 - dice_multi: 0.8677
+Epoch 83/100
+400/400 - 101s - loss: 0.0958 - dice_multi: 0.8727
+Epoch 84/100
+400/400 - 101s - loss: 0.0963 - dice_multi: 0.8688
+Epoch 85/100
+400/400 - 101s - loss: 0.0931 - dice_multi: 0.8744
+Epoch 86/100
+400/400 - 101s - loss: 0.0934 - dice_multi: 0.8742
+Epoch 87/100
+400/400 - 101s - loss: 0.0931 - dice_multi: 0.8702
+Epoch 88/100
+400/400 - 102s - loss: 0.0958 - dice_multi: 0.8752
+Epoch 89/100
+400/400 - 102s - loss: 0.1320 - dice_multi: 0.8454
+Epoch 90/100
+400/400 - 101s - loss: 0.0993 - dice_multi: 0.8638
+Epoch 91/100
+400/400 - 101s - loss: 0.0955 - dice_multi: 0.8739
+Epoch 92/100
+400/400 - 101s - loss: 0.0949 - dice_multi: 0.8738
+Epoch 93/100
+400/400 - 101s - loss: 0.0940 - dice_multi: 0.8773
+Epoch 94/100
+400/400 - 101s - loss: 0.0896 - dice_multi: 0.8758
+Epoch 95/100
+400/400 - 101s - loss: 0.0938 - dice_multi: 0.8734
+Epoch 96/100
+400/400 - 101s - loss: 0.0924 - dice_multi: 0.8752
+Epoch 97/100
+400/400 - 100s - loss: 0.0920 - dice_multi: 0.8797
+Epoch 98/100
+400/400 - 102s - loss: 0.0929 - dice_multi: 0.8772
+Epoch 99/100
+400/400 - 102s - loss: 0.0903 - dice_multi: 0.8746
+Epoch 100/100
+400/400 - 101s - loss: 0.0895 - dice_multi: 0.8805
+training time: 10153.111659765244
+executation time:144.3391910683025
+[0.9929936  0.94843906 0.8214413  0.8994031  0.8442197  0.9049117
+ 0.90541774]

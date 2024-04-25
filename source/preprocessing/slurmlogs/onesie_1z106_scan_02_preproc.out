@@ -1,0 +1,84 @@
+Starting relabelling...
+
+real	0m2.863s
+user	0m2.656s
+sys	0m0.200s
+Ending relabelling...
+N4 Bias field correction starting...
+
+Running N4 for 3-dimensional images.
+
+Current level = 1
+  Iteration 1 (of 5).   Current convergence value = 0.00317609 (threshold = 0.001)
+  Iteration 2 (of 5).   Current convergence value = 0.00312134 (threshold = 0.001)
+  Iteration 3 (of 5).   Current convergence value = 0.00303852 (threshold = 0.001)
+  Iteration 4 (of 5).   Current convergence value = 0.00294661 (threshold = 0.001)
+  Iteration 5 (of 5).   Current convergence value = 0.00284891 (threshold = 0.001)
+Current level = 2
+  Iteration 1 (of 5).   Current convergence value = 0.0036612 (threshold = 0.001)
+  Iteration 2 (of 5).   Current convergence value = 0.00338979 (threshold = 0.001)
+  Iteration 3 (of 5).   Current convergence value = 0.00315142 (threshold = 0.001)
+  Iteration 4 (of 5).   Current convergence value = 0.00295027 (threshold = 0.001)
+  Iteration 5 (of 5).   Current convergence value = 0.00273767 (threshold = 0.001)
+Current level = 3
+  Iteration 1 (of 5).   Current convergence value = 0.00595263 (threshold = 0.001)
+  Iteration 2 (of 5).   Current convergence value = 0.00349105 (threshold = 0.001)
+  Iteration 3 (of 5).   Current convergence value = 0.00207875 (threshold = 0.001)
+  Iteration 4 (of 5).   Current convergence value = 0.00137713 (threshold = 0.001)
+  Iteration 5 (of 5).   Current convergence value = 0.000980637 (threshold = 0.001)
+   N4MRIBiasFieldCorrectionImageFilter (0xef75e0)
+     RTTI typeinfo:   itk::N4MRIBiasFieldCorrectionImageFilter<itk::Image<float, 3u>, itk::Image<unsigned char, 3u>, itk::Image<float, 3u> >
+     Reference Count: 1
+     Modified Time: 602
+     Debug: Off
+     Observers: 
+       IterationEvent(Command)
+     Number Of Required Inputs: 1
+     Number Of Required Outputs: 1
+     Number Of Threads: 28
+     ReleaseDataFlag: Off
+     ReleaseDataBeforeUpdateFlag: Off
+     Input 0: (0xf0fc80)
+     Input 1: (0xf088e0)
+     Output 0: (0xefb9c0)
+     AbortGenerateData: Off
+     Progress: 0
+     Multithreader: 
+       RTTI typeinfo:   itk::MultiThreader
+       Reference Count: 1
+       Modified Time: 214
+       Debug: Off
+       Observers: 
+         none
+       Thread Count: 28
+       Global Maximum Number Of Threads: 128
+       Global Default Number Of Threads: 28
+     Mask label: 
+     Number of histogram bins: 200
+     Weiner filter noise: 0.01
+     Bias field FWHM: 0.15
+     Maximum number of iterations: [5, 5, 5]
+     Convergence threshold: 0.001
+     Spline order: 3
+     Number of fitting levels: [3, 3, 3]
+     Number of control points: [4, 4, 4]
+     Sigmoid normalized alpha: 0
+     Sigmoid normalized beta: 0.5
+Elapsed time: 56.2757
+
+real	1m15.164s
+user	3m25.399s
+sys	0m1.503s
+N4 Bias field correction ending...
+Image Resampling starting...
+
+real	0m4.299s
+user	0m15.322s
+sys	0m0.251s
+Image Resampling ending...
+Delineation Resampling starting...
+
+real	0m1.361s
+user	0m5.615s
+sys	0m0.160s
+Delineation Resampling ending...

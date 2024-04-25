@@ -1,0 +1,19 @@
+DrawEM multi atlas v1.1
+Subject:    preterm_01041_cort2cube3d_mr_0003 
+Age:        42
+Directory:  /data/mril/users/all/mrdata/research/processed/CNMC/cbl_preterm/neonatal/wip/kk/cube_segment/preterm_01041/scan_02/files 
+Posteriors: 0 
+Cleanup:    1 
+Threads:    1
+
+/cm/local/apps/slurm/var/spool/job45685/slurm_script -d /data/mril/users/all/mrdata/research/processed/CNMC/cbl_preterm/neonatal/wip/kk/cube_segment/preterm_01041/scan_02/files
+----------------------------
+preprocess.sh preterm_01041_cort2cube3d_mr_0003... done
+tissue-priors.sh preterm_01041_cort2cube3d_mr_0003 42 non-rigid-v2 1... done
+register-multi-atlas-using-gm-posteriors.sh preterm_01041_cort2cube3d_mr_0003 42 1... done
+labels-multi-atlas.sh preterm_01041_cort2cube3d_mr_0003... done
+segmentation.sh preterm_01041_cort2cube3d_mr_0003... done
+separate-hemispheres.sh preterm_01041_cort2cube3d_mr_0003... done
+correct-segmentation.sh preterm_01041_cort2cube3d_mr_0003... done
+postprocess.sh preterm_01041_cort2cube3d_mr_0003... done
+clear-data.sh preterm_01041_cort2cube3d_mr_0003... done

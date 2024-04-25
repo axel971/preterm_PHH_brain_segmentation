@@ -1,0 +1,136 @@
+..data size:(17, 256, 156, 256)
+..loading data finished Mon Dec  9 09:55:56 2019
+---------fold--1---------
+train:  [ 8  9 10 11 12 13 14 15 16]
+test:  [0 1 2 3 4 5 6 7]
+..generator_len: 250
+..training_n_subject: 9
+..training_n_patch_per_sub: 3464157
+..step_by_epoch:250
+..self.current_epoch:0
+..total_step:5196235
+..n_epoch_all_data:20784
+Epoch 1/20
+ - 1321s - loss: 0.7163 - dice_multi: 0.3870 - binary_crossentropy: 0.1676
+Epoch 2/20
+ - 1305s - loss: 0.4831 - dice_multi: 0.4458 - binary_crossentropy: 0.1172
+Epoch 3/20
+ - 1300s - loss: 0.3841 - dice_multi: 0.4650 - binary_crossentropy: 0.0941
+Epoch 4/20
+ - 1309s - loss: 0.3333 - dice_multi: 0.4817 - binary_crossentropy: 0.0817
+Epoch 5/20
+ - 1308s - loss: 0.2573 - dice_multi: 0.5171 - binary_crossentropy: 0.0643
+Epoch 6/20
+ - 1328s - loss: 0.2232 - dice_multi: 0.5583 - binary_crossentropy: 0.0560
+Epoch 7/20
+ - 1318s - loss: 0.1830 - dice_multi: 0.5984 - binary_crossentropy: 0.0464
+Epoch 8/20
+ - 1327s - loss: 0.1624 - dice_multi: 0.6274 - binary_crossentropy: 0.0414
+Epoch 9/20
+ - 1306s - loss: 0.1538 - dice_multi: 0.6622 - binary_crossentropy: 0.0392
+Epoch 10/20
+ - 1330s - loss: 0.1284 - dice_multi: 0.6843 - binary_crossentropy: 0.0330
+Epoch 11/20
+ - 1293s - loss: 0.1310 - dice_multi: 0.7007 - binary_crossentropy: 0.0336
+Epoch 12/20
+ - 1321s - loss: 0.1021 - dice_multi: 0.7165 - binary_crossentropy: 0.0265
+Epoch 13/20
+ - 1304s - loss: 0.0982 - dice_multi: 0.7304 - binary_crossentropy: 0.0256
+Epoch 14/20
+ - 1318s - loss: 0.0896 - dice_multi: 0.7548 - binary_crossentropy: 0.0234
+Epoch 15/20
+ - 1329s - loss: 0.0869 - dice_multi: 0.7578 - binary_crossentropy: 0.0227
+Epoch 16/20
+ - 1303s - loss: 0.0923 - dice_multi: 0.7708 - binary_crossentropy: 0.0241
+Epoch 17/20
+ - 1317s - loss: 0.0739 - dice_multi: 0.7857 - binary_crossentropy: 0.0195
+Epoch 18/20
+ - 1323s - loss: 0.0813 - dice_multi: 0.7887 - binary_crossentropy: 0.0214
+Epoch 19/20
+ - 1314s - loss: 0.0953 - dice_multi: 0.7731 - binary_crossentropy: 0.0249
+Epoch 20/20
+ - 1308s - loss: 0.0725 - dice_multi: 0.7798 - binary_crossentropy: 0.0192
+executation time:4574.334222316742
+---------fold--2---------
+train:  [0 1 2 3 4 5 6 7]
+test:  [ 8  9 10 11 12 13 14 15 16]
+..generator_len: 250
+..training_n_subject: 8
+..training_n_patch_per_sub: 3464157
+..step_by_epoch:250
+..self.current_epoch:0
+..total_step:4618876
+..n_epoch_all_data:18475
+Epoch 1/20
+ - 1169s - loss: 0.7807 - dice_multi: 0.3878 - binary_crossentropy: 0.1800
+Epoch 2/20
+ - 1164s - loss: 0.4448 - dice_multi: 0.4747 - binary_crossentropy: 0.1079
+Epoch 3/20
+ - 1230s - loss: 0.3389 - dice_multi: 0.4971 - binary_crossentropy: 0.0830
+Epoch 4/20
+ - 1192s - loss: 0.2454 - dice_multi: 0.5519 - binary_crossentropy: 0.0611
+Epoch 5/20
+ - 1161s - loss: 0.2100 - dice_multi: 0.5749 - binary_crossentropy: 0.0524
+Epoch 6/20
+ - 1156s - loss: 0.1590 - dice_multi: 0.6153 - binary_crossentropy: 0.0403
+Epoch 7/20
+ - 1182s - loss: 0.1414 - dice_multi: 0.6493 - binary_crossentropy: 0.0360
+Epoch 8/20
+ - 1154s - loss: 0.1278 - dice_multi: 0.6835 - binary_crossentropy: 0.0327
+Epoch 9/20
+ - 1154s - loss: 0.1209 - dice_multi: 0.6934 - binary_crossentropy: 0.0310
+Epoch 10/20
+ - 1159s - loss: 0.1073 - dice_multi: 0.7223 - binary_crossentropy: 0.0278
+Epoch 11/20
+ - 1159s - loss: 0.0999 - dice_multi: 0.7303 - binary_crossentropy: 0.0259
+Epoch 12/20
+ - 1160s - loss: 0.0900 - dice_multi: 0.7465 - binary_crossentropy: 0.0235
+Epoch 13/20
+ - 1162s - loss: 0.0875 - dice_multi: 0.7683 - binary_crossentropy: 0.0229
+Epoch 14/20
+ - 1181s - loss: 0.0780 - dice_multi: 0.7788 - binary_crossentropy: 0.0205
+Epoch 15/20
+ - 1152s - loss: 0.0711 - dice_multi: 0.7960 - binary_crossentropy: 0.0189
+Epoch 16/20
+ - 1151s - loss: 0.0657 - dice_multi: 0.8031 - binary_crossentropy: 0.0175
+Epoch 17/20
+ - 1162s - loss: 0.0643 - dice_multi: 0.8038 - binary_crossentropy: 0.0171
+Epoch 18/20
+ - 1147s - loss: 0.0857 - dice_multi: 0.7793 - binary_crossentropy: 0.0225
+Epoch 19/20
+ - 1152s - loss: 0.0633 - dice_multi: 0.7985 - binary_crossentropy: 0.0168
+Epoch 20/20
+ - 1148s - loss: 0.0638 - dice_multi: 0.7991 - binary_crossentropy: 0.0171
+/cm/shared/apps/python/3.6.0/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:523: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/cm/shared/apps/python/3.6.0/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:524: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/cm/shared/apps/python/3.6.0/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/cm/shared/apps/python/3.6.0/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/cm/shared/apps/python/3.6.0/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/cm/shared/apps/python/3.6.0/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:532: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+executation time:5381.121856212616
+[array([0.98023707, 0.63160074, 0.9095321 , 0.96936893, 0.74703026,
+       0.06636864, 0.43430874], dtype=float32), array([0.9982089 , 0.852872  , 0.95297354, 0.9672369 , 0.8186165 ,
+       0.92914313, 0.5112048 ], dtype=float32), array([0.99863607, 0.8764913 , 0.96957934, 0.8709682 , 0.88577217,
+       0.9137698 , 0.01627977], dtype=float32), array([0.99680525, 0.7588971 , 0.9470082 , 0.96893543, 0.85016185,
+       0.8119206 , 0.46763995], dtype=float32), array([0.9984272 , 0.904851  , 0.9664972 , 0.97222817, 0.88132596,
+       0.9181733 , 0.5205479 ], dtype=float32), array([0.99872833, 0.9060628 , 0.96721375, 0.9393833 , 0.9140975 ,
+       0.7282348 , 0.5442545 ], dtype=float32), array([0.99868256, 0.8668598 , 0.9776515 , 0.94327724, 0.91971046,
+       0.90862226, 0.36133733], dtype=float32), array([0.9979146 , 0.7426549 , 0.9173274 , 0.90566635, 0.849304  ,
+       0.9047762 , 0.13007778], dtype=float32), array([0.9959877 , 0.86171937, 0.9683401 , 0.9295392 , 0.9001914 ,
+       0.9221654 , 0.5887404 ], dtype=float32), array([0.9980644 , 0.8777283 , 0.9740883 , 0.9738999 , 0.92372906,
+       0.93381804, 0.513493  ], dtype=float32), array([0.9988847 , 0.89566386, 0.9816423 , 0.758038  , 0.91775995,
+       0.9447917 , 0.24311295], dtype=float32), array([0.99808544, 0.87929296, 0.95115936, 0.9768492 , 0.9112753 ,
+       0.9364452 , 0.5668487 ], dtype=float32), array([0.9978998, 0.8699292, 0.9627498, 0.9773214, 0.9138916, 0.8057554,
+       0.4163541], dtype=float32), array([0.99240124, 0.80569553, 0.89283514, 0.39809036, 0.8561255 ,
+       0.93012124, 0.05369917], dtype=float32), array([0.9985497 , 0.89097905, 0.9799463 , 0.93089974, 0.9134546 ,
+       0.91935873, 0.22488242], dtype=float32), array([0.9973285 , 0.7260382 , 0.9184827 , 0.987074  , 0.8703073 ,
+       0.921167  , 0.41339415], dtype=float32), array([0.9987052 , 0.88501555, 0.97721004, 0.8425115 , 0.9302405 ,
+       0.9409838 , 0.31166062], dtype=float32)]
+[0.9966792  0.8371972  0.9537787  0.900664   0.8825291  0.84915394
+ 	]

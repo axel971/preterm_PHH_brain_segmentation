@@ -1,0 +1,13 @@
+Histogram matching starting...
+terminate called after throwing an instance of 'itk::ImageFileReaderException'
+  what():  /cm/shared/apps/itk/5.0/include/ITK-5.0/itkImageFileReader.hxx:136:
+ Could not create IO object for reading file /home/axel/dev/neonatal_brain_segmentation/data/images/case/preprocessing/onesie_1z0106_scan_03_preproc.nii.gz
+The file doesn't exist. 
+Filename = /home/axel/dev/neonatal_brain_segmentation/data/images/case/preprocessing/onesie_1z0106_scan_03_preproc.nii.gz
+
+/cm/local/apps/slurm/var/spool/job161281/slurm_script: line 10: 161502 Aborted                 ./histogram_matching/build/histogramMatching ${img_preproc_dir}/${subject_0_id}_preproc.nii.gz ${img_preproc_dir}/${subject_id}_preproc.nii.gz ${img_preproc_dir}/${subject_id}_preproc.nii.gz
+
+real	0m0.667s
+user	0m0.596s
+sys	0m0.070s
+Histogram matching ending...
